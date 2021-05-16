@@ -144,6 +144,7 @@
         var pinans = document.createElement('input')
         pinans.setAttribute('id', 'pin')
         pinans.setAttribute('type', 'number')
+        pinans.setAttribute('pattern','[0-9]{6}')
 
 
         r4c1.append(pin)
@@ -287,7 +288,7 @@
         var sub = document.createElement('button')
         sub.setAttribute('class','btn btn-success')
         sub.innerText = "SUBMIT"
-       sub.setAttribute('onclick','datatable()')
+       sub.onclick= function (){datatable()}
  
         r9c1.append(sub)
         row9.append(r9c1)

@@ -15,10 +15,14 @@ var list8 = [];
 
 function datatable() {
 
+    event.preventDefault();
+
     var x = 1;
     var i = 0;
     var datarow = document.getElementById('data');
     var newrow = datarow.insertRow(x);
+
+
 
     list1[i] = document.getElementById("fname").value;
     list2[i] = document.getElementById("lname").value;
@@ -44,6 +48,7 @@ function datatable() {
     cell6.innerHTML = list6[i];
     cell7.innerHTML = list7[i];
     cell8.innerHTML = list8[i];
+
 
     x++;
     i++;
